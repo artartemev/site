@@ -1,16 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>artartemev</title>
+	<link rel="shortcut icon" href=favicon.svg type="image/x-icon">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+	<style type="text/css">
+		body {
+			background: black;
+			margin: 0;
+		}
+
+		#sidebar {
+			width: 20%;
+			height: 100vh;
+			opacity: 0.7;
+			background: #000000;
+			display: flex;
+  			flex-direction: column;
+  			justify-content: center;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 18px;
+			color: #FFFFFF;
+			font-weight: lighter;
+		}
+
+		.fotorama {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		.fotorama__nav-wrap {
+			position: absolute;
+			bottom: 0;
+		}
+		.fotorama__arr.fotorama__arr--prev {
+			display: none;
+		}
+	</style>
 </head>
 <body>
-О проекте
-Будь Добр - это социальный проект, главной задачей которого является развитие идеи взаимопомощи в обществе. Основными средствами взаимодействия в рамках этого сервиса будут сайт и приложение. 
+	<div class="fotorama"
+		data-width="100%"
+		data-ratio="16/8"
+		data-fit="cover"
+		data-autoplay="false"
+		data-swipe="true"
+		data-trackpad="true"
+		data-loop="true">
+		<img src="foto.png">
+		<img src="foto1.png">
+		<img src="http://s.fotorama.io/3.jpg">
+	</div>
 
-Суть такая, что пользователь, которому необходима помощь (инициатор) делает заявку об этом на сайте, заявка проходит модерацию и, в зависимости от социальной важности и сложности дела, оценивает это дела в Кармапоинтах. После заявка возникает на сайте и пользователи, готовые помочь видят её. После находиться пользователь готовый помочь, он предлагает свою помощь, они связываются и договариваются о деталях. После выполнения инициатор подтверждает факт помощи и кармапоинты зачисляются исполнителю. В итоге таким образом, помогая окружающим , пользователь способен накопить кармапоинты и впоследствии обменять их на вознаграждения. Важная деталь, что ни вознаграждения ни сама помощь не должны быть связаны с культурой употребления интоксикаций (Алкоголь/Табак/Наркотики) и мясной продукции.
+	<div id='sidebar'>
+		<ul>
+			<li>Обо мне</li>
+			<li>Будь Добр</li>
+			<li>Подкаст</li>
+			<li>Графический Дизайн</li>
+			<li>Блог</li>
+		</ul>
+	</div>
 
+	
 
-
-Запуск по России
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </body>
 </html>
