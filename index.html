@@ -1,9 +1,234 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
 	<title>artartemev</title>
+	<link rel="shortcut icon" href=favicon.svg type="image/x-icon">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+	<style type="text/css">
+		body {
+			background: black;
+			margin: 0;
+		}
+		
+		#sidebar {
+			position: fixed;
+			transition-property: opacity ;
+  			transition-duration: 3s;
+			top: 0;
+			bottom: 0;
+			width: 20%;
+			height: 100%;
+			opacity: 0.0;
+			background: #000000;
+			display: flex;
+  			flex-direction: column;
+  			justify-content: center;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 18px;
+			color: #FFFFFF;
+			font-weight: lighter;
+			background-attachment: fixed;
+		}
+		#sidebar._visible {
+			opacity: 0.7
+		}
+
+		#sidebar a {
+			color: white;
+			text-decoration: none;
+			transition-property: font-size;
+  			transition-duration: 0.4s;
+		}
+		#sidebar ._active a {
+			color: gold;
+    		font-size : 22px
+		}
+		.sidebar__list {
+			display: none;
+		}
+		.contacts__donate{
+			display: none;
+		}
+		#contacts {
+			width: 70%;
+  			margin: 80px auto;
+		}
+		.button { 
+			width: 70%;
+			background: #000000;
+			border: 1px solid #FFFFFF;
+			border-radius: 8px;
+			font-family: 'Open Sans', sans-serif;
+			padding: 5px;
+			text-align: center;
+			font-size: 16px;
+			color: #FFFFFF;
+			margin-top: 20px;
+		}
+
+		.fotorama {
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		.fotorama__nav-wrap {
+			position: absolute;
+			bottom: 0;
+		}
+		.fotorama__arr.fotorama__arr--prev {
+			visibility: hidden;
+		}
+		@media (min-width: 991px) {
+    		.desktop-only {
+       			display: block;
+   			}
+   		}
+	</style>
 </head>
 <body>
-Привет, friends!
+	<div id='about-me' class='scroll-item'>
+		<div 
+			class="fotorama"
+			data-width="100%"
+			data-ratio="16/8"
+			data-fit="cover"
+			data-autoplay="false"
+			data-swipe="true"
+			data-trackpad="true"
+			data-loop="true">
+			<img src="about.png">
+			<img src="music.png">
+			<img src="hitch.png">
+			<img src="krsn108.png">			
+		</div>
+	</div>
+	<div id='besokind' 
+		class="scroll-item">
+	<div
+		class="fotorama"
+		data-width="100%"
+		data-ratio="16/8"
+		data-fit="cover"
+		data-autoplay="false"
+		data-swipe="true"
+		data-trackpad="true"
+		data-loop="true" >
+		<img src="foto.png">
+		<img src="foto1.png">
+		<img src="http://s.fotorama.io/3.jpg">
+		</div>
+	</div>
+	<div id='podcast' 
+		class="scroll-item">
+		<div
+		class="fotorama"
+		data-width="100%"
+		data-ratio="16/8"
+		data-fit="cover"
+		data-autoplay="false"
+		data-swipe="true"
+		data-trackpad="true"
+		data-loop="true">
+		<img src="foto.png">
+		<img src="foto1.png">
+		<img src="http://s.fotorama.io/3.jpg">
+		</div>
+	</div>
+	<div id='design' 
+			class="scroll-item">
+			<div
+			class="fotorama"
+			data-width="100%"
+			data-ratio="16/8"
+			data-fit="cover"
+			data-autoplay="false"
+			data-swipe="true"
+			data-trackpad="true"
+			data-loop="true">
+			<img src="foto.png">
+			<img src="foto1.png">
+			<img src="http://s.fotorama.io/3.jpg">
+			</div>
+	</div>
+	<div id='blog' 
+		class="scroll-item">
+		<div
+		class="fotorama"
+		data-width="100%"
+		data-ratio="16/8"
+		data-fit="cover"
+		data-autoplay="false"
+		data-swipe="true"
+		data-trackpad="true"
+		data-loop="true">
+		<img src="foto.png">
+		<img src="foto1.png">
+		<img src="http://s.fotorama.io/3.jpg">
+		</div>
+	</div>
+	<div id='sidebar'>
+		<ul class='sidebar__list desktop-only' >
+			<li class='sidebar__about-me _active' data-link='about-me'><a href="#about-me">Обо мне</a></li>
+			<li class='sidebar__besokind' data-link='besokind'><a href="#besokind">Будь Добр</a></li>
+			<li class='sidebar__podcast' data-link='podcast'><a href="#podcast">Подкаст</a></li>
+			<li class='sidebar__design' data-link='design'><a href="#design">Графический Дизайн</a></li>
+			<li class='sidebar__blog' data-link='blog'><a href="#blog">Блог</a></li>
+		</ul>
+		<div id='contacts'>
+			<a href='https://vk.com/artartemev'><img src="vk.png"  width="32" height="32"></a>
+			<a href='http://fb.com/artartemev1'><img src="fb.png"  width="32" height="32"></a>
+			<a href='http://t.me/artartemev'><img src="telegram.png"  width="32" height="32"></a>
+			<a href="sms:beatofrain@me.com"><img src="imessage.png"  width="32" height="32"></a>
+			<a href=xxx><div class="contacts__donate button desktop-only"> Пожертвовать </div><a>
+		</div>
+	</div>
+
+	
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+	<script>
+		var sidebar = $('#sidebar');
+
+		// sidebar
+		sidebar.addClass('_visible');
+
+		// scroll
+		var activeMenuItem = sidebar.find('._active');
+		var menuItems = sidebar.find('li');
+		var scrollItems = $('.scroll-item');
+		var scrollHeight = window.scrollHeight;
+		var itemHeight = $(scrollItems.get(0)).height();
+		setTimeout(function() {
+			itemHeight = $(scrollItems.get(0)).height();
+		}, 1000)
+		
+
+		$(window).resize(function() {
+			setTimeout(function() {
+			itemHeight = $(scrollItems.get(0)).height();
+			}, 1000)
+		});
+
+		// Bind to scroll
+		$(window).scroll(function(){
+			// Get container scroll position
+			var fromTop = $(this).scrollTop();
+			var lastElementInViewport;
+			var index = Math.round(fromTop / itemHeight);
+			lastElementInViewport = scrollItems.get(index);
+
+			if (lastElementInViewport &&
+				lastElementInViewport.id !== activeMenuItem.data('link'))
+			{
+				activeMenuItem.removeClass('_active');
+				activeMenuItem = menuItems.filter('.sidebar__' + lastElementInViewport.id)
+					.addClass('_active');
+			} 
+		});
+	</script>
 </body>
 </html>
