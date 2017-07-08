@@ -68,6 +68,11 @@
 			margin-top: 20px;
 		}
 
+		.link_button {
+			width: 20%;
+			margin: 35% 80% ;
+		}
+		}
 		.fotorama {
 			top: 0;
 			bottom: 0;
@@ -100,14 +105,18 @@
 			data-trackpad="true"
 			data-loop="true">
 			<img src="about.png">
-			<img src="music.png">
+			<div data-img="music.png"> 
+				<a href="#music" > 
+					<img class="link_button" src="button_mus.png"></a></div>
 			<img src="hitch.png">
-			<img src="krsn108.png">			
+			<div data-img="krsn108.png"> 
+				<a href="https://www.youtube.com/watch?v=-6dBC4FU9Fg"> 
+					<img class="link_button" src="Tatastha.png"></a></div>
 		</div>
 	</div>
 	<div id='besokind' 
 		class="scroll-item">
-	<a target="_blank" href="http://besokind.ru"
+		<div
 		class="fotorama"
 		data-width="100%"
 		data-ratio="16/8"
@@ -116,7 +125,10 @@
 		data-swipe="true"
 		data-trackpad="true">
 		<img src="bsk_1.png">
-		</a>
+		<div data-img="bsk_2.png"> 
+				<a href="http://besokind.ru"> 
+					<img class="link_button" src="button_bsk.png"></a></div>
+		</div>
 	</div>
 	<div id='podcast' 
 		class="scroll-item">
@@ -127,12 +139,14 @@
 		data-fit="cover"
 		data-autoplay="false"
 		data-swipe="true"
-		data-trackpad="true"
-		data-loop="true">
+		data-trackpad="true">
 		<img src="bytheway.png">
-		</div>
+		<div data-img="bytheway_2.png"> 
+				<a href="https://itunes.apple.com/ru/podcast/по-пути/id1256322570?l=en&mt=2"> 
+					<img class="link_button" src="button_btw.png"></a> 
+				</div>
 	</div>
-	<div id='design' 
+ 		 <div id='design' 
 			class="scroll-item">
 			<div
 			class="fotorama"
@@ -148,9 +162,25 @@
 			<img src="http://s.fotorama.io/3.jpg">
 			</div>
 	</div>
+		<div id='music' 
+			class="scroll-item"
+			width="100%"
+			ratio="16/8">
+			<div align="right" 
+				width="80%"
+				ratio="16/8">
+					<img src="esti.png" width="30%">
+					<iframe width="50%" 
+					height="600" 
+					scrolling="no" 
+					frameborder="no" 
+					src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/23327903&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+			</div>
+		</div>
+	</div>
 	<div id='blog' 
-		class="scroll-item">
-		<div
+		class="scroll-item">	
+	   <div
 		class="fotorama"
 		data-width="100%"
 		data-ratio="16/8"
@@ -158,7 +188,7 @@
 		data-autoplay="false"
 		data-swipe="true"
 		data-trackpad="true"
-		data-loop="true">
+		data-loop="true"> //=>
 		<img src="foto.png">
 		<img src="foto1.png">
 		<img src="http://s.fotorama.io/3.jpg">
@@ -170,6 +200,7 @@
 			<li class='sidebar__besokind' data-link='besokind'><a href="#besokind">Будь Добр</a></li>
 			<li class='sidebar__podcast' data-link='podcast'><a href="#podcast">Подкаст</a></li>
 			<li class='sidebar__design' data-link='design'><a href="#design">Графический Дизайн</a></li>
+			<li class='sidebar__music' data-link='music'><a href="#music">Mузыка</a></li>
 			<li class='sidebar__blog' data-link='blog'><a href="#blog">Блог</a></li>
 		</ul>
 		<div id='contacts'>
