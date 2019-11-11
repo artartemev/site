@@ -1,130 +1,459 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>ArtArtemev</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Meta tags-->
+    <!-- Primary Meta Tags -->
+    <title>ArtArtemev</title>
+    <meta name="title" content="ArtArtemev" />
+    <meta
+      name="description"
+      content="Hey 👋! I am ArtArtemev, a freelance frontend dev and web designer. I focus on designing & building websites and strive on creating visually appealing experiences."
+    />
 
-  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://marioecg.com/" />
+    <meta property="og:title" content="ArteArtemev" />
+    <meta
+      property="og:description"
+      content="Hey 👋! I am Artem Artemev, a freelance web designer. I focus on designing websites and strive on creating visually appealing experiences."
+    />
+    <meta property="og:image" content="https://marioecg.com/meta.png" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://artartemev.pro/" />
+    <meta property="twitter:title" content="ArtArtemev" />
+    <meta
+      property="twitter:description"
+      content="Hey 👋! I am Artem Artemev, a freelance web designer. I focus on designing websites and strive on creating visually appealing experiences."
+    />
+    <meta property="twitter:image" content="https://marioecg.com/meta.png" />
+    <!-- Stylesheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-124925926-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      gtag("config", "UA-124925926-1");
+    </script>
+  <link href="css/main2.css" rel="stylesheet"></head>
+  <body class="in-english">
+    <!-- Message for when a user visits the site on screen resolution < 330px -->
+    <!-- <div class="message">
+      <p>Please visit on a screen resolution above 330 pixels 🙂</p>
+    </div> -->
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <main>
+      <!-- Brand -->
+      <div class="brand">
+        <h1 class="brand__name">
+          <a href="index.html">
+            <span class="wrap"> <span> ArtArtemev </span> </span>
+          </a>
+        </h1>
 
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-</head>
+        <div class="brand__tagline">
+          <p>
+            <span class="wrap switch">
+              <span>
+                Freelance <br />
+                Фриланс
+              </span>
+            </span>
+          </p>
 
-<body>
-
-  <!-- Static navbar -->
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        <a class="navbar-brand" href="index.html">ArtArtemev</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="index.html">Хоум</a></li>
-          <li><a href="about.html">Обо мне</a></li>
-          <li><a href="http://behance.net/artartemev" target="_blank" class="smoothscroll">Работы</a></li>
-          <li><a href="contact.html" class="smoothscroll">Контакты</a></li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-  </div>
-
-
-  <div id="headerwrap">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-lg-offset-3">
-          <h4>ПРИВЕТ, МЕНЯ ЗОВУТ</h4>
-          <h1>АРТЁМ</h1>
-          <h4>ВСЁ ЕСТЬ ОДНА ЛЮБОВЬ</h4>
+          <p>
+            <span class="wrap switch">
+              <span>
+                designer <br />
+                Дизайнер
+              </span>
+            </span>
+          </p>
         </div>
       </div>
-    </div>
-    <!-- /container -->
-  </div>
 
-  <section id="works"></section>
-  <div class="container">
-    <div class="row centered mt mb">
-      <h1>Работы</h1>
+      <!-- Language selector-->
+      <div class="langs">
+        <span>
+          <span>
+            <span class="lang lang--en">EN</span> —
+            <span class="lang lang--es">RU</span>
+          </span>
+        </span>
+      </div>
 
-      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-        <a href="https://readymag.com/u60944068/besokindlanding/" target="_blank"><img src="img/portfolio/bsk.png" class="img-responsive"></a>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-        <a href="https://readymag.com/u60944068/jappa/" target="_blank"><img src="img/portfolio/folio02.png" class="img-responsive"></a>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-        <a href="https://readymag.com/u60944068/veganov/" target="_blank"><img src="img/portfolio/folio03.png" class="img-responsive"></a>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-        <a href="https://readymag.com/u60944068/vegmap/" target="_blank"><img src="img/portfolio/folio04.png" class="img-responsive"></a>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-        <a href="https://readymag.com/u60944068/graphic" target="_blank"><img src="img/portfolio/folio05.png" class="img-responsive"></a>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-        <a href="http://behance.net/artartemev" target="_blank"><img src="img/portfolio/folio06.png" class="img-responsive"></a>
-      </div>
-    </div>
-  </div>
+      <!-- Navigation -->
+      <nav class="nav">
+        <li class="nav__item">
+          <a href="index.html#about">
+            <span class="wrap switch">
+              <span>
+                About <br />
+                Обо мне
+              </span>
+            </span>
+          </a>
+        </li>
 
-    <div id="social">
-    <div class="container">
-      <div class="row centered">
-        <div class="col-lg-2">
-          <a href="http://behance.net/artartemev" target="_blank"><i class="fa fa-behance"></i></a>
+        <li class="nav__item">
+          <a href="index.html#work">
+            <span class="wrap switch">
+              <span>
+                Projects <br />
+                Проекты
+              </span>
+            </span>
+          </a>
+        </li>
+
+        <li class="nav__item">
+          <a href="index.html#contact">
+            <span class="wrap switch">
+              <span>
+                Contact <br />
+                Контакты
+              </span>
+            </span>
+          </a>
+        </li>
+      </nav>
+
+      <!-- Page content -->
+      <div class="wrapper">
+        <!-- Hero -->
+        <div class="hero">
+          <h1 class="hero__title">
+            <span class="wrap switch">
+              <span class="hero__word">
+                Creating design <br />
+                Делаю дизайн
+              </span>
+            </span>
+
+            <br />
+
+            <span class="wrap switch">
+              <span class="hero__word">
+                with love <br />
+                с любовью
+              </span>
+            </span>
+          </h1>
+
+          <p class="hero__caption">
+            <span class="wrap switch">
+              <span>
+                Everything is Love <br />
+                Всё есть Любовь
+              </span>
+            </span>
+          </p>
         </div>
-        <div class="col-lg-2">
-          <a href="http://fb.com/artartemev1" target="_blank"><i class="fa fa-facebook"></i></a>
-        </div>
-        <div class="col-lg-2">
-          <a href="http://twitter.com/artartemev" target="_blank"><i class="fa fa-twitter"></i></a>
-        </div>
-        <div class="col-lg-2">
-          <a href="http://t.me/artartemev" target="_blank"><i class="fa fa-telegram"></i></a>
-        </div>
-        <div class="col-lg-2">
-          <a href="http://instagram.com/artartemev" target="_blank"><i class="fa fa-instagram"></i></a>
-        </div>
-        <div class="col-lg-2">
-          <a href="http://vk.com/artartemev" target="_blank"><i class="fa fa-vk"></i></a>
-        </div>
 
+        <!-- About -->
+        <section id="about" class="section">
+          <h1 class="section__title">
+            <div class="section__title-line"></div>
+            <span class="wrap switch">
+              <span>
+                About <br />
+                Обо мне
+              </span>
+            </span>
+            <div class="section__title-line"></div>
+          </h1>
+
+          <div class="section__content section__content--tight">
+            <p>
+              <span class="wrap switch">
+                <span>
+                  Heyo 👋! I am Artem.<br />
+                  Привет 👋! Я — Артём.
+                </span>
+              </span>
+
+              <span class="wrap switch">
+                <span>
+                  Consciously and with love<br />
+                  Осознано и с любовью
+                </span>
+              </span>
+
+              <span class="wrap switch">
+                <span>
+                  I create ECO design and illustrations.<br />
+                  создаю ЭКО дизайн и иллюстрации
+                </span>
+              </span>
+
+              <span class="wrap switch">
+                <span>
+                  (no meat, alcohol, drugs or gambling).<br />
+                  (никаких мяса, алкоголя, наркотиков
+                </span>
+              </span>
+
+              <span class="wrap switch">
+                <span>
+                   I specialize in websites,<br />
+                  или азартных игр).
+                </span>
+              </span>
+
+              <span class="wrap switch">
+                <span>
+                  but I have good experience<br />
+                  Специализируюсь на сайтах, 
+                </span>
+              </span>
+
+              <span class="wrap switch">
+                <span>
+                  in branding and printed products.<br />
+                  но есть хороший опыт в брендинге
+                </span>
+              </span>
+
+              <span class="wrap switch">
+                <span>
+                  <br />
+                  и печатной продукции.
+                </span>
+              </span>
+
+
+              <span class="wrap switch">
+                <span>
+                   I always keep the client aware<br />
+                  Всегда держу клиента в курсе
+                  </span>
+              </span>
+
+              <span class="wrap switch">
+                <span>
+                  of the work process<br />
+                 протекающей работы
+                 </span>
+              </span>
+
+               <span class="wrap switch">
+                <span>
+                and very attentive to the timing.<br />
+                и очень внимателен к срокам.
+                </span>
+              </span> 
+
+              <span class="wrap switch">
+                <span>
+                  If necessary,<br />
+                 При необходимости
+                 </span>
+              </span>
+
+               <span class="wrap switch">
+                <span>
+                  I can give preference<br />
+                 могу отдать предпочтение
+                 </span>
+              </span> 
+
+              <span class="wrap switch">
+                <span>
+                  to the speed of execution<br />
+                 скорости исполнения
+                 </span>
+              </span> 
+
+              <span class="wrap switch">
+                <span>
+                   with minimal losses in quality<br />
+                 с минимальными потерями в качестве.
+                 </span>
+              </span>
+          </p>
+        </div>
+              
+        </section>
+
+        <!-- Work -->
+        <section id="work" class="section">
+          <h1 class="section__title">
+            <div class="section__title-line"></div>
+            <span class="wrap switch">
+              <span>
+                Works <br />
+                Проекты
+              </span>
+            </span>
+            <div class="section__title-line"></div>
+          </h1>
+
+          <div class="section__content">
+            <!-- Projects -->
+            <div class="projects">
+              <a href="https://readymag.com/artartemev/besokindlanding/" target="_blank" class="project">
+                <h4 class="project__name">
+                  <span class="wrap"><span>Be So Kind</span></span>
+                </h4>
+                <p class="project__desc">
+                  <span class="wrap switch">
+                    <span>
+                      Charitable project <br />
+                      Благотворительный
+                    </span>
+                  </span>
+
+                  <span class="wrap switch">
+                    <span>
+                        <br />
+                      проект
+                    </span>
+                </p>
+              </a>
+
+              <a href="https://readymag.com/artartemev/vegmap/" target="_blank" class="project">
+                <h4 class="project__name">
+                  <span class="wrap"><span>VegMap</span></span>
+                </h4>
+                <p class="project__desc">
+                  <span class="wrap switch">
+                    <span>
+                      Map of vegetarian <br />
+                      Карта вегетарианских
+                    </span>
+                  </span>
+
+                    <span class="wrap switch">
+                    <span>
+                      restaurants <br />
+                      ресторанов
+                    </span>
+                  </span>
+                </p>
+              </a>
+
+              <a href="https://readymag.com/artartemev/pharma/" target="_blank" class="project">
+                <h4 class="project__name">
+                  <span class="wrap"><span>PharmaBonus</span></span>
+                </h4>
+                <p class="project__desc">
+                  <span class="wrap switch">
+                    <span>
+                      CashBack Service <br />
+                      Кэшбэк сервис
+                    </span>
+                  </span>
+
+                  <span class="wrap switch">
+                    <span>
+                      for Pharma <br />
+                      для Аптек
+                    </span>
+                  </span>
+                </p>
+              </a>
+
+              <a href="https://readymag.com/artartemev/shanti/" target="_blank" class="project">
+                <h4 class="project__name">
+                  <span class="wrap"><span>Shanti</span></span>
+                </h4>
+                <p class="project__desc">
+                  <span class="wrap switch">
+                    <span>
+                      Yoga club<br />
+                      Йога клуб
+                    </span>
+                  </span>
+                </p>
+              </a>
+
+             
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+          <h1 class="section__title">
+            <div class="section__title-line"></div>
+            <span class="wrap switch">
+              <span>
+                Contact <br />
+                Контакты
+              </span>
+            </span>
+            <div class="section__title-line"></div>
+          </h1>
+
+          <div class="section__content section__content--grid">
+            <!-- Social network -->
+            <div class="social">
+              <h4 class="social__title">
+                <span class="wrap"><span>Social</span></span>
+              </h4>
+
+              <ul class="social__list">
+                <li class="social__item">
+                  <span class="wrap">
+                    <span>
+                      <a href="https://t.me/artartemev" target="_blank"
+                        >Telegram</a
+                      >
+                    </span>
+                  </span>
+                </li>
+                <li class="social__item">
+                  <span class="wrap">
+                    <span>
+                      <a
+                        href="https://www.instagram.com/arartemev/"
+                        target="_blank"
+                        >Instagram</a
+                      >
+                    </span>
+                  </span>
+                </li>
+                <li class="social__item">
+                  <span class="wrap">
+                    <span>
+                      <a
+                        href="https://www.vk.com/artartemev"
+                        target="_blank"
+                        >VK</a
+                      >
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <h4 class="mail">
+              <span class="wrap">
+                <span>
+                  <a href="mailto:iart23@ya.ru">79992180108@ya.ru</a>
+                </span>
+              </span>
+            </h4>
+            <!-- Mail -->
+          </div>
+        </section>
       </div>
-    </div>
-  </div>
-
-    <!-- / copyrights -->
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/php-mail-form/validate.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
-</body>
+    </main>
+  <script type="text/javascript" src="js/main.js"></script></body>
 </html>
